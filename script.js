@@ -7,7 +7,8 @@ console.log(n);
 
 function boxClicked() {
     console.log("box clicked")
-    switch(n) {
+    console.log(n);
+    switch (true) {
         case n >= 201 && n <= 300:
            boxes[0].style.backgroundColor = "yellow";
            break;

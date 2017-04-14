@@ -5,7 +5,7 @@ var n = boxes.length;
 
 console.log(n);
 
-function boxClicked() {
+function boxClicked(index) {
     console.log("box clicked")
     if (n >= 201 && n <= 300) {
         boxes[i].style.backgroundColor = "yellow";
@@ -56,5 +56,5 @@ function boxClicked() {
 
 
 for (var i = 0; i < n; i++) {
-    boxes[i].addEventListener("click", boxClicked);
+    boxes[i].addEventListener("click", boxClicked(i));
 }
